@@ -1,0 +1,85 @@
+@import './styles/utils.scss';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+.link{
+    @include magin-top-bottom-auto();
+    @include magin-right-left-auto();
+}
+body{
+    background-image: url("./background-img.jpg");
+    background-size: cover;
+}
+
+.App{
+    margin-top: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    height: 97.5vh;
+}
+.navi{
+    display: flex;
+    height: 70px;
+    width: 85%;
+    @include magin-right-left-auto();
+    margin-bottom: 15px;
+    .logo-box{
+        flex: 2;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+        cursor: pointer;
+    }
+    .search-box{
+        flex: 10;
+        width: 60%;
+    }
+    .list{
+        flex: 2;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+}
+.header{
+    height: 55px;
+    width: 95%;
+    @include magin-right-left-auto();
+    display: flex;
+}
+.body{
+    // display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    @include magin-right-left-auto();
+    .container{
+        .menu-box{
+            flex: 4;
+            @include border(null,2px,red);
+        }
+        .open{
+            display: flex;
+        }
+        .close{
+            display: none;
+        }
+        flex: 9;
+        display: flex;
+        flex-direction: column;
+        .slide{
+            @include border(null,2px,red);
+            height:100%;
+            width:95%;
+            flex: 4;
+        }
+        .content{
+            flex: 6;
+            @include border(null,2px,red);
+        }
+    }
+}
+.footer{
+    font-family: 'Playfair Display', serif;
+    width: 98%;
+    text-align: end;
+}

@@ -1,0 +1,85 @@
+@import '../../styles/utils.scss' ;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+.header-category-btn-box{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    .header-category-btn{
+        width: 100px;
+        @include magin-top-bottom-auto();
+        outline: 0;
+        border: 0;
+        text-align: center;
+        background: transparent;
+        font-size: 1.5rem;
+        font-family: 'Playfair Display', serif;
+        cursor: pointer;
+    }
+}
+.notice-login-singUp-language-box{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    .header-notice-box{
+        height: 100%;
+        width: 70px;
+        display: flex;
+        .header-notice{
+            @include magin-top-bottom-auto();
+            width: 100%;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+    .header-login-box{
+        height: 100%;
+        width: 70px;
+        display: flex;
+        .header-login{
+            width: 100%;
+            @include magin-top-bottom-auto();
+            border: 0;
+            outline: 0;
+            background: transparent;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+    .header-singUp-box{
+        height: 100%;
+        width: 70px;
+        display: flex;
+        .header-singUp{
+            @include magin-top-bottom-auto();
+            width: 100%;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+    .header-language-box{
+        height: 100%;
+        width: 70px;
+        display: flex;
+        .header-language{
+            @include magin-top-bottom-auto();
+            width: 100%;
+            border: 0;
+            outline: 0;
+            background: transparent;
+            font-family: 'Playfair Display', serif;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    }
+}
